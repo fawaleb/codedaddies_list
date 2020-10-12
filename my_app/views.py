@@ -7,4 +7,4 @@ def home(request):
 
 
 def new_search(request):
-    return None
+    return render(request,'my_app/new_search.html')
