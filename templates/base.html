@@ -1,11 +1,57 @@
-<!DOCTYPE html>
+
+{% load static %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Codedaddies List</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,initial-scale=1"/>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 <body>
-<h2>Testing to see if this works!</h2>
+
+    <nav>
+    <div class="container nav-wrapper">
+        <a href="/" class="brand-logo">Codedaddies List</a>
+        <ul id="nav-mobile" class="right">
+            <li><a href="/">Home</a> </li>
+        </ul>
+    </div>
+</nav>
+
+<h1 style="text-align: center">What do you want to search for on Codedaddies List?</h1>
+<div class="row">
+    <div class="col s4">
+        <div class="center">
+            <i class="large material-icons" style="color: #ee6e73">flash_on</i>
+            <p>Fast craigslist web scraper</p>
+            <p class="light center">Scrape away right here with a beautiful GUI.</p>
+        </div>
+    </div>
+    <div class="col s4">
+        <div class="center">
+            <i class="large material-icons" style="color: orange">camera</i>
+            <p>Filter your searches</p>
+            <p class="light center">We built in functionality to filter based on pricing.</p>
+        </div>
+    </div>
+    <div class="col s4">
+        <div class="center">
+            <i class="large material-icons" style="color: blue">chrome_reader_mode</i>
+            <p>A much sexier front end to Craigslist</p>
+            <p class="light center">We built this with you.</p>
+        </div>
+    </div>
+</div>
+
+
 
 </body>
 </html>
