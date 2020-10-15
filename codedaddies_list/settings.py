@@ -13,6 +13,10 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 import os
 import django_heroku
 import whitenoise
+import dj_database_url
+from decouple import config
+
+
 
 from pathlib import Path
 
@@ -89,8 +93,8 @@ WSGI_APPLICATION = 'codedaddies_list.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-SECRET_KEY = config('SECRET_KEY')
-DEBUG=config('DEBUG',default=False,cast=bool)
+
+
 DATABASES = {
     'default':dj_database_url.config(
         default=config('DATABASE_URL')
