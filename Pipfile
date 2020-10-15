@@ -9,6 +9,11 @@ verify_ssl = true
 django = "*"
 beautifulsoup4 = "*"
 requests = "*"
+django-heroku = "*"
+gunicorn = "*"
+whitenoise = "*"
+python-decouple = "*"
+dj-database-url = "*"
 
 [requires]
 python_version = "3.8"
